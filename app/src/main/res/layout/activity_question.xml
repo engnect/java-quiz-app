@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Question"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        >
+
+        <TextView
+            android:id="@+id/kategoriAdıTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KATEGORİ ADI"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            ></TextView>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+            <ImageView
+                android:id="@+id/questionIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                ></ImageView>
+            <TextView
+                android:id="@+id/questionTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Dünyadaki en sert doğal madde nedir?"
+                android:textSize="24sp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+
+            </TextView>
+            <Button
+                android:id="@+id/ButtonA"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="A"
+                android:layout_marginTop="10dp"
+
+                android:layout_gravity="center"
+                >
+
+            </Button>
+            <Button
+                android:id="@+id/ButtonB"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="B"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                />
+            <Button
+                android:id="@+id/ButtonC"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="C"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                />
+            <Button
+                android:id="@+id/ButtonD"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="D"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+
+
+            >
+            <Button
+                android:id="@+id/backButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GERİ DÖN"
+                android:layout_margin="10dp"
+                />
+            <Button
+                android:id="@+id/endYarisma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YARIŞMAYI BİTİR"
+                android:layout_margin="10dp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
